@@ -39,14 +39,29 @@ public class ArrayMethods2
 	} 
 	*/
 	
-	//anything less than or equal to the pivot is before it, anything greater is after
+	//Anything less than or equal to the pivot is before it, anything greater is after
 	public static int partition(int[] list)
 	{
 		int pivot = list[0];
 		int a = list.length;
-		for(int b = 1; b < a - 1; b++)
-		{
-			
+		for(int b = 1; b < a - 1; b++)		//index of list?
+		{									//would the while loop be first or the for loop?
+			int[] list0 = new int[0];		//new array
+			while(list0.length < a)			
+			{
+				//you can make it start at 0, then any big numbers go after it
+				list0[0] = pivot;
+				//when theres a small number push everything over by one and place it at 0?
+				if(list[b] > pivot)
+				{
+					//position of b goes after pivot?
+				}
+				else
+				if(list[b] <= pivot)
+				{
+					//position of b goes before pivot --
+				}
+			} 
 		}
 		
 	}
