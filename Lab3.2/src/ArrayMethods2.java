@@ -3,6 +3,13 @@
 
 public class ArrayMethods2 
 {
+	//testing code
+	public static void main(String[] args)
+	{
+		String [] list1 = {"aa", "bb", "cc", "dd"};
+		String [] list2 = {"abc", "lala", "zebra"};
+	}
+	
 	//Pre-Condition: Both list1 and list 2 contain Strings in alphabetical order from a to z
 /*	public static String[] merge(String[] list1, String[] list2)
 	{
