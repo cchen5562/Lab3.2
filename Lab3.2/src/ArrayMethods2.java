@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //Cristina Chen
 //Lab 3.2 Merge and Partition
 
@@ -6,8 +8,27 @@ public class ArrayMethods2
 	//testing code
 	public static void main(String[] args)
 	{
-		String [] list1 = {"aa", "bb", "cc", "dd"};
-		String [] list2 = {"abc", "lala", "zebra"};
+		//testing arrays
+		String [] test1 = {"apple", "cucumber", "microsoft", "zorro"};
+		String [] test2 = {"banana", "cherry", "mahogany", "oreos", "pinata"};
+		int[] test3 = { 3, 4, 2, 7, 12, 22, 0, 1 };
+		
+		//merge test
+		long start = System.nanoTime();
+		String[] mergeResult = merge(test1, test2);
+		long end = System.nanoTime();
+		long time = end - start;
+		System.out.println("Merge test took: " + time + " nanoseconds");
+		System.out.println(Arrays.toString(mergeResult)); //should print the array with all words in alpha order
+		
+		//partition test
+		start = System.nanoTime();
+		int pivotFinalPos = partition(test3);
+		end = System.nanoTime();
+		time = end - start;
+		System.out.println("Partition test took: " + time + " nanoseconds");
+		System.out.println("Final Pivot Positino: " + pivotFinalPos); //should print 3
+		System.out.println(Arrays.toString(test3)); //should have all elements partitioned around the pivot 3
 	}
 	
 	//Pre-Condition: Both list1 and list 2 contain Strings in alphabetical order from a to z
