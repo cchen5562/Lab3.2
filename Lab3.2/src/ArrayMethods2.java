@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 //Cristina Chen
 //Lab 3.2 Merge and Partition
+//not done
 
 public class ArrayMethods2 
 {
@@ -22,13 +23,13 @@ public class ArrayMethods2
 		System.out.println(Arrays.toString(mergeResult)); //should print the array with all words in alpha order
 		
 		//partition test
-/*		start = System.nanoTime();
+		start = System.nanoTime();
 		int pivotFinalPos = partition(test3);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Partition test took: " + time + " nanoseconds");
 		System.out.println("Final Pivot Position: " + pivotFinalPos); //should print 3
-*/		System.out.println(Arrays.toString(test3)); //should have all elements partitioned around the pivot 3
+		System.out.println(Arrays.toString(test3)); //should have all elements partitioned around the pivot 3
 	}
 	
 	//Pre-Condition: Both list1 and list 2 contain Strings in alphabetical order from a to z
@@ -93,13 +94,13 @@ public class ArrayMethods2
 			
 			if((pivot < check) && (right = false))
 			{
-				swap them
+				//swap them
 				
 			}
 			
 			if((pivot > check) && (right = true))
 			{
-				swap them
+				//swap them
 			}
 			
 			if((pivot > check) && (right = false))
