@@ -41,7 +41,7 @@ public class ArrayMethods2
 		//then ++ the less one
 		int o = list1.length;
 		int p = list2.length;
-		String[] list3 = new String[list1.length + list2.length];	//the final array, the one that gets filled in?
+		String[] list3 = new String[list1.length + list2.length];	//the final array, the one that gets filled in
 		for(int i = 0; i < o - 1; i++)			//first list index, don't need for-loops?
 		{
 			for(int j = 0; j < p - 1; j++)		//second list index
@@ -65,11 +65,25 @@ public class ArrayMethods2
 				}
 			}
 		} return list3;
+		
+		/* int o = list1.length;
+		 * int p = list2.length;
+		 * String[] sorted = new String[list1.length + list2. length];
+		 * for (int i = 0; i < sorted.length; i++) 		//index of the sorted array
+		 * {
+		 * 		
+		 * 		if (list1[some variable].compareTo(list2[some variable]) > 0)
+		 * 		{
+		 * 			
+		 * 		}
+		 * }
+		 * 
+		 */
 	} 
 	
 	
 	//Anything less than or equal to the pivot is before it, anything greater is after
-	public static int partition(int[] list)
+/*	public static int partition(int[] list)
 	{
 		//psuedo code, the first index is the pivot
 		// then you loop from the other end
@@ -113,5 +127,5 @@ public class ArrayMethods2
 		
 	}
 
-
+*/
 }
