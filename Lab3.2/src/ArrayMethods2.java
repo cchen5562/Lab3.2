@@ -23,14 +23,14 @@ public class ArrayMethods2
 		System.out.println(Arrays.toString(mergeResult)); //should print the array with all words in alpha order
 		
 		//partition test
-		start = System.nanoTime();
+	/*	start = System.nanoTime();
 		int pivotFinalPos = partition(test3);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Partition test took: " + time + " nanoseconds");
 		System.out.println("Final Pivot Position: " + pivotFinalPos); //should print 3
 		System.out.println(Arrays.toString(test3)); //should have all elements partitioned around the pivot 3
-	}
+	*/}
 	
 	//Pre-Condition: Both list1 and list 2 contain Strings in alphabetical order from a to z
 	public static String[] merge(String[] list1, String[] list2)
@@ -39,7 +39,7 @@ public class ArrayMethods2
 		//psuedo code, start off with both index 0 
 		//then compare, whatever is less puts into new array
 		//then ++ the less one
-		int o = list1.length;
+	/*	int o = list1.length;
 		int p = list2.length;
 		String[] list3 = new String[list1.length + list2.length];	//the final array, the one that gets filled in
 		for(int i = 0; i < o - 1; i++)			//first list index, don't need for-loops?
@@ -64,21 +64,34 @@ public class ArrayMethods2
 					}
 				}
 			}
-		} return list3;
+		} return list3;    */
 		
-		/* int o = list1.length;
-		 * int p = list2.length;
-		 * String[] sorted = new String[list1.length + list2. length];
-		 * for (int i = 0; i < sorted.length; i++) 		//index of the sorted array
-		 * {
-		 * 		
-		 * 		if (list1[some variable].compareTo(list2[some variable]) > 0)
-		 * 		{
-		 * 			
-		 * 		}
-		 * }
-		 * 
-		 */
+		String [] o = {"apple", "cucumber", "microsoft", "zorro"};
+		String [] p = {"banana", "cherry", "mahogany", "oreos", "pinata"};
+		String[] sorted = new String[list1.length + list2. length];
+		int count = 0;
+		 		
+	 	while (count < sorted.length)
+	 	{
+	 		for(int i = 0; i < o.length; i++)
+	 		{
+	 			sorted[i] = o[i];
+ 				count++;
+	 		}
+	 
+	 		for(int j = 0; j < p.length; j++)
+	 		{
+ 				sorted[count++] = p[j];
+	 		}
+		  
+	 		for(int i = 0; i < sorted.length; i++)
+	 		{
+	 			System.out.print(sorted[i] + " ");	
+	 		}
+	 	}
+	 	 
+	 		return sorted;
+	 	
 	} 
 	
 	
